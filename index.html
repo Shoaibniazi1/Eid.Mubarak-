@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eid Mubarak 2025</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to top right, #fceabb, #f8b500);
+      font-family: 'Noto Nastaliq Urdu', 'Arial', sans-serif;
+      color: #2d2d2d;
+      overflow: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 48px;
+      color: #ffffff;
+      text-shadow: 2px 2px 5px #000000;
+    }
+
+    .message-box {
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 30px auto;
+      padding: 20px;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #ffd700;
+      font-size: 20px;
+      line-height: 2;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 24px;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      border-radius: 12px;
+    }
+
+    .balloon, .star {
+      position: absolute;
+      animation: float 10s infinite ease-in-out;
+    }
+
+    .balloon {
+      width: 50px;
+      height: 70px;
+      background: #ff5e78;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .star {
+      width: 20px;
+      height: 20px;
+      background: yellow;
+      clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+      );
+      box-shadow: 0 0 10px yellow;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🌙 عید مبارک 2025 🌙</h1>
+
+  <div class="message-box">
+    <p>السلام علیکم و رحمۃ اللہ و برکاته!</p>
+    <p>تمام محترم گروپ ممبران کو دل کی گہرائیوں سے <strong>عیدالاضحیٰ</strong> کی پرخلوص مبارکباد پیش کرتا ہوں۔</p>
+    <p>اللہ رب العزت اس عظیم قربانی کے دن کی برکت سے ہم سب کی زندگیوں میں خوشیاں، آسانیاں اور دین و دنیا کی کامیابیاں عطا فرمائے۔</p>
+    <p>یہ عید ہمارے دلوں کو محبت، ایثار، قربانی اور بھائی چارے سے بھر دے۔</p>
+    <p><strong>عید مبارک ہو!</strong></p>
+    <p style="text-align: left;">FROM CEO OF NIAZI INSTITUTE OFFICIAL — <strong>Shoaib Khan Niazi</strong></p>
+  </div>
+
+  <div class="footer">❤️ Shoaib Khan Niazi ❤️</div>
+
+  <script>
+    function createDecor(type, count) {
+      for (let i = 0; i < count; i++) {
+        const el = document.createElement("div");
+        el.className = type;
+        el.style.left = Math.random() * 100 + "vw";
+        el.style.animationDuration = (5 + Math.random() * 5) + "s";
+        el.style.top = Math.random() * 100 + "vh";
+        document.body.appendChild(el);
+      }
+    }
+
+    createDecor("balloon", 20);
+    createDecor("star", 30);
+  </script>
+</body>
+</html>
